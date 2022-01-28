@@ -1,0 +1,203 @@
+body {
+  background-color: #a3a3a3;
+  /** body에 배경이미지 적용 */
+  background-image: url("../static/images/pattern.png");
+  /** 고정된 사이즈로 설정 */
+  background-size: 100px;
+
+  /** 기본 body 사이즈를 화면 크기로 고정 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bookcover {
+  /** 배경 색깔 지정  */
+  background-color: #b4d1da;
+  /** 모서리 둥글게 */
+  border-radius: 9px;
+  /** 윤곽선 */
+  border: 1px solid #738186;
+
+  /** 기본 너비, 높이 지정 (반응형 X) */
+  width: 960px;
+  height: 660px;
+  /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+  margin: 100px auto;
+
+  /** .bookdot 요소에서 absolute 속성값을 이용하기 위해 position: relative 로 설정 */
+  position: relative;
+}
+.bookdot{
+  /* 점선으로 변경*/
+  border-style: dashed;
+  /* 선 색상 변경*/
+  color: white;
+  /*모서리 둥글게*/
+  border-radius: 9px;
+  /*테두리 위치 및 넓이 조절*/
+  display: flex;
+  left: 13px;
+  top: -88px;
+  width: 930px;
+  height: 630px;
+  /*좌우 마진 중앙, 상하 마진 100px로 지정*/
+  margin: 100px auto;
+  /*bookcover 기준으로 움직이도록 하기 위해 absolute*/
+  position:absolute;
+}
+.page{
+  z-index: 0;
+  /*배경 색상 설정*/
+  background: rgb(247, 243, 243);
+  /*모서리 둥글게 설정*/
+  border-radius: 9px;
+  /*배경 위치 및 넓이조절*/
+  display: flex;
+  left: 14px;
+  top: -85px;
+  width: 900px;
+  height: 600px;
+  /*좌우 마진 중앙, 상하 마진 100px로 지정*/
+  margin: 100px auto;
+  /*bookcover 기준으로 움직이도록 설정*/
+  position:absolute;
+}
+/*left*/
+.container1{
+  z-index: 1;
+  flex:0.25;
+  display: flex;
+  flex-direction: column;
+}
+.people{
+  color: black;
+  margin-top: 30px;
+  margin-left: 35px;
+  font-family: 'NeoDunggeunmo';
+}
+.first{
+  flex: 0.95;
+  border-radius: 9px;
+  background-color: white;
+  margin-top: 13px;
+  margin-left: 30px;
+}
+.box{
+  border: 1px solid rgb(197, 196, 196);
+}
+.left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.picture{
+  flex: 0.1;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+.intro1{
+  font-size: 15px;
+  color: black;
+  flex: 0.1;
+  margin: 10px 20px 0px 20px; 
+  font-family: 'KyoboHand';
+  
+}
+.intro2{
+  font-size: 15px;
+  color: black;
+  flex-basis: 200px;
+  margin: 20px 20px 60px 20px;
+  font-family: 'KyoboHand';
+  flex: 0.2;
+}
+.intro3{
+  color: black;
+  flex: 0.1;
+  font-size: 5px;
+  margin: 60px 20px 0px 20px;
+  font-family: 'KyoboHand';
+}
+.check{
+  color: black;
+  flex: 0.2;
+  margin: 10px 20px 0px 20px;
+}
+/*right*/
+.container2{
+  z-index: 1;
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  padding-right: 0px;
+}
+
+.menu{
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  margin-top: 50px;
+}
+.menubox{
+  flex: 0.06;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #3a81a3;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin: 0px 40px 10px 0px;
+}
+.menubox a{
+  text-decoration : none;
+  color: white;
+  font-family:'NeoDunggeunmo';
+}
+.menubox:hover{
+  background-color: #5c77b6;
+}
+.menubox:active{
+  background-color: #5c77b6;
+}
+.container3{
+  display: flex;
+  flex: 0.1;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.introduce{
+  flex:0.75;
+  color:black;
+  font-family: 'NeoDunggeunmo';
+}
+.address{
+  flex:0.25;
+  color: black;
+  font-size: 11px;
+  margin-right: 30px;
+  font-family: 'NeoDunggeunmo';
+  text-align: end;
+}
+.third{
+  overflow: auto;
+  width: 100%;
+  height: 550px;
+}
+.container4{
+  display: flex;
+  flex: 2;
+}
+.second{
+  flex:0.8;
+  border-radius: 9px;
+  margin-top: 0px;
+  margin-bottom: 28px;
+  margin-left: 40px;
+  background-color: white;
+}
+span{
+  color: red;
+}

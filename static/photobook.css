@@ -1,0 +1,19 @@
+.petphoto{
+    font-family: 'NeoDunggeunmo';
+    color: black;
+    margin: 20px 20px 0px 20px;
+}
+.third img{
+    width: 100%;
+    height: auto;
+}
+.photobox{
+    color: black;
+    background-color: rgb(209, 209, 209);
+    margin: 20px 0px 0px 20px;
+    padding: 7px 0px 10px 7px;
+    font-family: 'NeoDunggeunmo';
+}
+.other{
+    margin-top: 60px;
+}

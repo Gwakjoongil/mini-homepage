@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./diary.css">
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page"></div>
+        <div class="container1">
+          <div class="people">TODAY <span>28</span> | TOTAL 234918</div>
+          <div class="first box">
+            <div class="left">
+              <div class="picture"><img src="./images/me1.jpg" alt="수달" width="150px" height="200px"></div>
+              <div class="intro1">내 리즈시절...</div>
+              <div class="intro2">My diaries....★</div>
+              <div class="intro3">해피수달</div>
+              <div class="check">
+                <select name="none" onchange="window.open(value,'_blank');">
+                  <option value="#">===선택===</option>
+                  <option value="https://cafe.naver.com/codeuniv">모각코 바로가기</option>
+                  <option value="https://blog.naver.com/ww7759">쥰 블로그 바로가기</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="container3">
+           <div class="introduce">ュ んı절 우己l들의 ㅁı니홈ㅍı...★</div>
+           <div class="address">https://blog.naver.com/ww7759</div>    
+          </div>
+           <div class="container4">
+            <div class="second box">
+              <div class="fourth">
+
+                    <div class="calendar">
+                        <div class="mainday">02.03<br>WED</div>
+                        <div class="subday">1 2 3 4 <span class="saturday">5</span> <span class="sunday">6</span> 7 8 9 10 11 <span class="saturday">12 </span><span class="sunday">13</span> 14 15 16 17 18 <span class="saturday">19 </span><span class="sunday">20</span> 21 22 23 24 25 <span class="saturday">26 </span><span class="sunday">27</span> 28 29 30</div>
+                    </div>
+                  <div class="maindiarybox">
+                    <div class="subdiarybox">
+                        <div class="diarybox1">
+                            <div class="day">2022.01.24 금 18:20</div>
+                            <div class="diarycontents">오늘은 열심히 싸이월드를 만들었다.<br>뭐 이렇게 할게 많은가 생각하면서 만들었더니..<br>어느새 끝났다...<br>끝일 것 같지만, 끝일까?<br><br>정말 모르겠다. 내일도 열심히 살아야겠다고 생각하고 있다.<br><br>화이링~</div>
+                        </div>
+                        <div class="diarybox">
+                            <div class="day">2012.07.05 화 20:50</div>
+                            <div class="diarycontents">울ㅈㅣ않ㄱㅣ<br>아프ㅈㅣ않ㄱㅣ<br>씩씩ㅎrㄱㅣ<br>억ㅈㅣ로ㄹr도웃ㄱㅣ<br>ㅌㅣㄴㅐㅈㅣ말ㄱㅣ<br>.<br>.<br>오늘도 괜찮은 듯<br>그렇ㄱㅔ ㅈㅣㄴㅐㄱㅣ</div>
+                        </div>
+                        <div class="diarybox"> 
+                              <div class="day">2013.12.20 수 21:30</div>
+                              <div class="diarycontents">난...ㄱㅏ끔<br>눈물을 흘린ㄷㅏ...<br>ㄱㅏ끔은 눈물을 참을 수 없는 ㄴㅐ가 별루ㄷㅏ...<br>많이 ㅇㅏㅍㅏㅅㅓ...<br>소ㄹㅣ치며...울 수 있ㄷr는 것...<br>좋은ㄱㅓㅇㅑ...<br>ㅁ ㅓ...꼭 슬ㅍㅓㅇㅑ만 우는 건 ㅇr니잖ㅇr...^^<br>난...눈물ㅇㅣ....좋다....<br>ㅇr니...<br>ㅁㅓ리가 ㅇㅏ닌<br>맘으로....우는 ㄴㅐㄱㅏ 좋ㄷ ㅏ...</div>
+                            </div>
+                            <div class="secret">
+                            <button class="diary-button fint-neo" onclick="getTextFile()">
+                            <i class="fas fa-lock icon"></i>ㄴr의 ㅂㅣ밀일ㄱㅣ 보ㄱㅣ
+                          </button>
+                          </div>
+                          <div class="diary-box" id="secret-box">
+                            <div class="diary-date">나의 비밀 일기</div>
+                            <div class="diary-text" id="secret-diary"></div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  
+              </div>
+            </div>
+            <div class="menu">
+              <div class="menubox"><a href="../home.html">홈</a></div>
+              <div class="menubox"><a href="#">다이어리</a></div>
+              <div class="menubox"><a href="./photobook.html">사진첩</a></div>
+              <div class="menubox"><a href="./guestbook.html">방명록</a></div>
+            </div> 
+          </div>
+        </div> 
+        </div>
+      </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/5fe1d2a588.js" crossorigin="anonymous"></script>
+    <script>
+    function getTextFile(file){
+        var input= document.createElement("input");
+        input.type="file";
+        input.accept="text/plain";
+        input.onchange=function(event){
+            processFile(event.target.files[0]);
+        };
+        input.click();
+    }
+    function processFile(file){
+        var reader=new FileReader();
+        reader.readAsText(file,"utf-8");
+
+        reader.onload=function(){
+            document.getElementById("secret-diary").innerText=reader.result;
+            document.getElementById("secret-box").style.display="block"
+        };
+    }
+    
+    </script>
+  </body>
+</html>
+ 
